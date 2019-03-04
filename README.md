@@ -1,17 +1,17 @@
 # MyApps
 
 
-### Feladat: Irjunk programot, ami gyümölcsöket tart nyilván. Ehhez hozzunk létre egy
-osztályt. adattagok az osztályban: Gyümölcs neve, szárzási hely, mennyiség
+### Feladat: Irjunk programot, ami gyÃ¼mÃ¶lcsÃ¶ket tart nyilvÃ¡n. Ehhez hozzunk lÃ©tre egy
+osztÃ¡lyt. adattagok az osztÃ¡lyban: GyÃ¼mÃ¶lcs neve, szÃ¡rzÃ¡si hely, mennyisÃ©g
 
-## Osztály neve: Fruit 
-# Adattagok: Nev:string Szarmhely: string Menny:int
+## OsztÃ¡ly neve: Fruit 
+### Adattagok: Nev:string Szarmhely: string Menny:int
 
-# Különleges metódus az osztályon belül: Konstruktor
+### KÃ¼lÃ¶nleges metÃ³dus az osztÃ¡lyon belÃ¼l: Konstruktor
 
 public Fruit(string aNev, string aSzhely,int aMenny)
 {
 
 }
-#Feladat: Számoljuk meg a felvitt gyümölcsök mennyiségét
+###Feladat: SzÃ¡moljuk meg a felvitt gyÃ¼mÃ¶lcsÃ¶k mennyisÃ©gÃ©t
 
