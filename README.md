@@ -9,9 +9,7 @@ osztályt. adattagok az osztályban: Gyümölcs neve, szárzási hely, mennyisé
 
 ### Különleges metódus az osztályon belül: Konstruktor
 
-public Fruit(string aNev, string aSzhely,int aMenny)
-{
+**Fruit**(string aNev, string aSzhely,int aMenny)
 
-}
 ###Feladat: Számoljuk meg a felvitt gyümölcsök mennyiségét
 
