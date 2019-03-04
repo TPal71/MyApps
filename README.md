@@ -1,7 +1,7 @@
 # MyApps
 
 
-### Feladat: 
+### 1.Feladat: 
 Irjunk programot, ami gyümölcsöket tart nyilván. Ehhez hozzunk létre egy osztályt. adattagok az osztályban: Gyümölcs neve, szárzási hely, mennyiség
 
 Osztály neve: Fruit 
@@ -12,5 +12,6 @@ Osztály neve: Fruit
 
 **Fruit**(string aNev, string aSzhely,int aMenny)
 
-### Feladat: Számoljuk meg a felvitt gyümölcsök mennyiségét
+### 2.Feladat: 
+Számoljuk meg a felvitt gyümölcsök mennyiségét
 
