@@ -11,13 +11,16 @@ namespace MyFirstApp
         static void Main(string[] args)
         {
 
-            Fruit[] fruits = new Fruit[15];
+            //Fruit[] fruits = new Fruit[15];
+
+            var fruits = new List<Fruit>();        
             
             //Segédváltozók
             string nev;
             string szhely;
             int mennyiseg;
             int gyszam;
+            int osszmenny = 0;
 
             //Bekérjük a gyümölcsök számát számát
             Console.Write("Kérem a gyümölcsök számát:");
@@ -33,20 +36,18 @@ namespace MyFirstApp
                 szhely = Console.ReadLine();
                 Console.Write("Kérem a(z) {0}. gyümölcs mennyiség: ", i + 1);
                 mennyiseg = int.Parse(Console.ReadLine());
+
+                osszmenny += mennyiseg;
                 /*
                  * 
                  */
                 //Tömbfeltöltés: Konstruktor hivása
-                fruits[i] = new Fruit(nev,szhely,mennyiseg);
+                //fruits[i] = new Fruit(nev,szhely,mennyiseg);
+                fruits.Add(new Fruit(nev, szhely, mennyiseg));
             }
-
-
-
-
-
+            Console.WriteLine("Gyümölcsök összes mennyisége: " + osszmenny);
             Console.ReadKey();
-
-            
+           
         }
     }
 }

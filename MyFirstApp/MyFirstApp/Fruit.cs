@@ -19,6 +19,7 @@ namespace MyFirstApp
             Nev = aNev;
             Szarmhely = aSzhely;
             Menny = aMenny;
+            Console.WriteLine("DEBUG: Fruit() konstruktor meghivás");
         }
     }
 }

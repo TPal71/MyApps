@@ -13,4 +13,5 @@ public Fruit(string aNev, string aSzhely,int aMenny)
 {
 
 }
+#Feladat: Számoljuk meg a felvitt gyümölcsök mennyiségét
 
