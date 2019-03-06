@@ -20,20 +20,40 @@ namespace kpo
             ///Megoldandó feladat 1:
             ///Ciklikus programfutás, amig a felhasználó szeretne játszani
             bool moreGame = true;
-            
+     
+
+
             ///Feladat 2: Változók létrehozása
-            ///
+            
             string compChoice = "";
             string playerChoice = "";
 
             int compScore = 0;
             int playerScore = 0;
 
+
             Console.WriteLine("*******Kő/Papir/Olló játék*********");
 
             do
             {
+                ///Feladat 3:
+                ///Player választásának megkérdezése és tárolása
+                ///
+                Console.WriteLine("Mit választasz? k/p/o");
 
+                switch (Console.ReadKey(true).KeyChar)
+                {
+                    case 'k':
+                        playerChoice = "kő";
+                        break;
+                    case 'p':
+                        playerChoice = "papir";
+                        break;
+                    case 'o':
+                        playerChoice = "olló";
+                        break;
+                }
+                
                 Console.Write("Akarsz még játszani? i/n");
                 if (Console.ReadKey(true).KeyChar == 'n')
                 {
@@ -42,7 +62,7 @@ namespace kpo
 
             } while (moreGame);
 
-           
+         
 
 
 
