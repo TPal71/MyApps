@@ -13,7 +13,8 @@ namespace getKey
             ///A program a leütött karakterek után kiirja, hogy "szám" vagy "betű"
             do
             {
-                
+               
+
                 switch (Console.ReadKey(true).KeyChar)
                 {
                     case '0':
