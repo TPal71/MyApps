@@ -53,7 +53,12 @@ namespace kpo
                         playerChoice = "olló";
                         break;
                 }
-                
+                ///Feladat 4:
+                ///Számítógép választásának kérdése: Random()
+                ///
+
+
+
                 Console.Write("Akarsz még játszani? i/n");
                 if (Console.ReadKey(true).KeyChar == 'n')
                 {
