@@ -15,3 +15,9 @@ Különleges metódus az osztályon belül: *Konstruktor*
 ### 2.Feladat: 
 Számoljuk meg a felvitt gyümölcsök mennyiségét
 
+
+
+### Ismétlés
+Osztály létrehozás egy string adattaggal
+
+
