@@ -49,9 +49,39 @@ namespace esf
                 Console.WriteLine("Do While ciklus");
                 v--;
             } while (v>0);
-            
 
-            
+            //Elágazások: IF
+            v = 2;
+            if (v == 2)
+            {
+                Console.WriteLine("A v értéke egyenlő 2vel");
+
+            }
+            else if (v == 3)
+            {
+                Console.WriteLine("A v értéke egyenlő 3val");
+            }
+            else
+            {
+                Console.WriteLine("V nem 2 és nem 3, hanem:" + v);
+                 
+            }
+            //Elágazások: switch
+            v = 6;
+            switch (v)
+            {
+                case 0:
+                    Console.WriteLine("Switch:" + v);
+                    break;
+                case 5:
+                    Console.WriteLine("Switch:" + v);
+                    break;
+                default:
+                    Console.WriteLine("Switch default:" + v);
+                    break;
+            }
+
+
             //Beolvas egy karakert a konzolról
             Console.ReadKey();
 
