@@ -15,12 +15,24 @@ namespace esf
         /// </summary>
         public string Name;
 
-        //Konstruktor
+        //Konstruktor: Inicializálja az osztály adattagjait
         public Excercise(string aName)
         {
             Name = aName;
         }
         
+       //Tagfüggvény
+        public void printName()
+        {
+            Console.WriteLine(Name);
+           
+        }
+        // Másik tagfüggvény
+        public string getName()
+        {
+            return Name;
+        }
+
 
 
     }

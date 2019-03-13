@@ -15,7 +15,14 @@ namespace esf
 
             //ex.Name = "Tresó Pál";
 
+            //Public adattagot elérjük
             Console.WriteLine(ex.Name);
+
+            //Tagfüggvény hivás
+            ex.printName();
+            
+            //Ezt kellene megoldani
+            Console.WriteLine(ex.getName());
 
             
             //Beolvas egy karakert a konzolról
