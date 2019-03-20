@@ -11,10 +11,12 @@ namespace MyShape
         static void Main(string[] args)
         {
 
+            double a = 10, r = 10;
+            Alakzat n = new Negyzet(a);
+            Alakzat k = new Kor(r);
 
-            Negyzet n = new Negyzet(10);
-
-            Console.WriteLine(n.Terulet());
+            Console.WriteLine("Négyzet területe(a={0}):{1}",a,n.Terulet());
+            Console.WriteLine("Kör területe:(r={0}):{1}",r,k.Terulet());
 
             Console.ReadKey();
 

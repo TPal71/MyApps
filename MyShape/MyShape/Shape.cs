@@ -8,19 +8,37 @@ namespace MyShape
 {
     abstract class Alakzat
     {
-        abstract public int Terulet();
+        protected const double PI = 3.14;
+        protected  double x;
+        protected  double y;
+
+
+        public abstract double Terulet();
+        
+
+
     }
      class Negyzet : Alakzat
-    {
-        int Oldal = 0;
+     {
 
-        public Negyzet(int n)
+        public Negyzet(double n) 
         {
-            Oldal = n;
+            x = n;
         }
-        public override int Terulet()
+        public override double Terulet()
         {
-            return Oldal * Oldal;
+            return x * x;
+        }
+     }
+    class Kor : Alakzat
+    {
+        public Kor(double r) 
+        {
+            x = r;
+        }
+        public override double Terulet()
+        {
+            return PI * x * x;
         }
     }
 }
