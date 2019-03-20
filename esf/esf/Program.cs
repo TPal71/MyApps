@@ -150,6 +150,55 @@ namespace esf
             {
                 Console.WriteLine(book.Name + " " + book.Author + " " + book.Page);
             }
+            /////////////////////////////////////////////////////////////////
+            //Feladatmegoldása
+            /////////////////////////////////////////////////////////////////
+            bool moreBook = true;
+            string sName, sAuthor;
+            int iPage;
+
+            Console.WriteLine("********************************************************************");
+            Console.WriteLine("******************* Üdv a könyvtár rendszeremben *******************");
+            Console.WriteLine("********************************************************************");
+            do
+            {
+                Console.WriteLine("-------------------------------------------------------------------");
+                Console.WriteLine("Lehetőség [u]:új könyv  [l]:listázás [t]:könyv törlése [k]:kilépés");
+                Console.WriteLine("-------------------------------------------------------------------");
+                switch (Console.ReadKey(true).KeyChar)
+                {
+                    case 'u':
+                        Console.Write("Kérem a könyv címét:");
+                        sName = Console.ReadLine();
+                        Console.Write("Kérem a könyv szerzőjét:");
+                        sAuthor = Console.ReadLine();
+                        Console.Write("Kérem a lapszámot:");
+                        iPage = int.Parse(Console.ReadLine());
+                        Lista.Add(new Book { Name = sName, Author = sAuthor, Page = iPage  });
+                        break;
+                    case 'k':
+                        moreBook = false;
+                        break;
+                    case 't':
+                        Console.Write("Kérem a könyv címét:");
+                        sName = Console.ReadLine();
+
+                        Lista.Remove(Lista.Find(x => x.Name.Contains(sName)));
+                        break;
+                    case 'l':
+                        Console.WriteLine("Könyvtár tartalma:");
+                        
+                        foreach (Book book in Lista)
+                        {
+                            Console.WriteLine("->" + book.Name + " " + book.Author + " " + book.Page);
+                        }
+
+                        break;
+                }
+            } while (moreBook);
+
+
+
             /*Oldalszám keresés
             Console.WriteLine("Tartalmaz(): {0}",
             Lista.Contains(new Book { Name="",Author="", Page=100}));
@@ -161,7 +210,7 @@ namespace esf
             //     Lista.Find(x => x.Name.Contains("Oroszlánkölykök")).Name);
 
             //Beolvas egy karakert a konzolról
-            Console.ReadKey();
+          
 
             
         }
