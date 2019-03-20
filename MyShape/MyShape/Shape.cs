@@ -11,8 +11,6 @@ namespace MyShape
         protected const double PI = 3.14;
         protected  double x;
         protected  double y;
-
-
         public abstract double Terulet();
         
 
@@ -30,6 +28,19 @@ namespace MyShape
             return x * x;
         }
      }
+    class Teglalap : Alakzat
+    {
+        public Teglalap(double aX, double aY)
+        {
+            x = aX;
+            y = aY;
+
+        }
+        public override double Terulet()
+        {
+            return x * y;
+        }
+    }
     class Kor : Alakzat
     {
         public Kor(double r) 
