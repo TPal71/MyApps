@@ -122,7 +122,7 @@ namespace esf
             Lista.Add(new Book() { Name = "Megkergetve", Author = "Margó István" ,Page=200});
             Lista.Add(new Book() { Name = "Egri csillagok", Author = "Gárdonyi Géza", Page = 1200 });
 
-            
+                   
             //Lista kiiratása
             foreach (Book book in Lista)
             {
