@@ -57,17 +57,30 @@ namespace lab0520
             //Hárommal osztható számok kiirása 50-ig
             for (int i = 0; i < 50; i++)
             {
-                if ((i%3)== 0)
-                {
-                    Console.WriteLine(i);
-                }
+                
             }
 
             //Feladat 50 ig a primszámok keresése
+            Console.WriteLine("Primszámok:");
+            FindPrimes(0, 50);
 
             Console.ReadKey();
 
            
+        }
+        private static bool IsPrime(int number)
+        {
+            for (int i = 2; i <= Math.Sqrt(number); i++)
+                if (number % i == 0) return false;
+            return true;
+        }
+
+        private static void FindPrimes(int min, int max)
+        {
+            for (int i = min; i < max; i++)
+            {
+                if (IsPrime(i)) Console.WriteLine(i);
+            }
         }
     }
 }
